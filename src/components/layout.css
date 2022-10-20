@@ -1,0 +1,26 @@
+:root {
+  --color-text: #333;
+  --color-primary: #7026b9;
+  --size-gutter: 10em;
+  --space-4: 4px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: sans-serif;
+  font-size: var(--font-md);
+  line-height: var(--line-height-normal);
+  overflow-y: scroll;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text);
+  font-family: sans-serif;
+  /* font-family: var(--font-sans); */
+  font-weight: normal;
+  margin: 0;
+  word-wrap: break-word;
+}

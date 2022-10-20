@@ -9,5 +9,5 @@ module.exports = {
     title: "Maybe later, try again then :)",
   },
   /* Your site config here */
-  plugins: [],
+  plugins: ["gatsby-plugin-postcss"],
 };
