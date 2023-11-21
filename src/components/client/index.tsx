@@ -4,10 +4,9 @@ import { useState } from "react";
 
 export default function Tagline() {
   const weather = ["☀️", "☔️", "🌨"];
-
-  const [forecast] = useState(
+  const [forecastId] = useState(
     weather[Math.floor(Math.random() * weather.length)]
   );
 
-  return <>Made in Sunny Lancashire {forecast}</>;
+  return <>Made in Sunny Lancashire {weather[forecastId]}</>;
 }
