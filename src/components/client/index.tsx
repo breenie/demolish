@@ -1,12 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Tagline() {
   const weather = ["☀️", "☔️", "🌨"];
-  const [forecastId] = useState(
-    weather[Math.floor(Math.random() * weather.length)]
-  );
+  const [forecastId, setForecastId] = useState(0);
 
-  return <>Made in Sunny Lancashire {weather[forecastId]}</>;
+  useEffect(() => {
+    setForecastId(Math.floor(Math.random() * weather.length));
+  }, []);
+
+  return (
+    <>
+      Made in Sunny Lancashire {forecastId != null ? weather[forecastId] : ""}
+    </>
+  );
 }
