@@ -4,7 +4,7 @@ export default {
   footer: (
     <footer>
       <small>
-        {Tagline()}
+        <Tagline />
         <a href="/feed.xml">RSS</a>
       </small>
       <style jsx>{`
