@@ -1,10 +1,10 @@
-const YEAR = new Date().getFullYear()
+import Tagline from "./src/components/client/index";
 
 export default {
   footer: (
     <footer>
       <small>
-        <time>{YEAR}</time> © Your Name.
+        {Tagline()}
         <a href="/feed.xml">RSS</a>
       </small>
       <style jsx>{`
@@ -16,5 +16,5 @@ export default {
         }
       `}</style>
     </footer>
-  ),
-}
+  )
+};
