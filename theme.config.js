@@ -1,4 +1,4 @@
-import Tagline from "./src/components/client/index";
+import Tagline from "./app/components/client/footer-tagline";
 
 export default {
   footer: (
