@@ -49,7 +49,6 @@ const CoffeeSubscriptionCalculator = () => {
 
   return (
     <div>
-      <h1>Coffee Subscription Calculator</h1>
       <form>
         <div>
           <label>
